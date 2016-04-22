@@ -427,7 +427,6 @@
     <Content Include="prime\primeui\themes\delta\images\ui-icons_888888_256x240.png" />
     <Content Include="prime\primeui\themes\delta\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="prime\primeui\themes\delta\images\ui-icons_ffffff_256x240.png" />
-    <Content Include="prime\primeui\themes\delta\theme2.css" />
     <Content Include="prime\primeui\themes\delta\theme.css" />
     <Content Include="prime\primeui\themes\dot-luv\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
     <Content Include="prime\primeui\themes\dot-luv\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
