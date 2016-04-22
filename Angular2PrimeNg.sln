@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular2PrimeNg", "Angular2PrimeNg\Angular2PrimeNg.csproj", "{822A8B42-6894-4A62-A97B-412AF34D1134}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{822A8B42-6894-4A62-A97B-412AF34D1134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822A8B42-6894-4A62-A97B-412AF34D1134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822A8B42-6894-4A62-A97B-412AF34D1134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822A8B42-6894-4A62-A97B-412AF34D1134}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

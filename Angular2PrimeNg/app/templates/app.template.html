@@ -1,0 +1,34 @@
+﻿<h1>{{titulo}}</h1>
+<input type="text" pInputText/>
+
+<p-splitButton label="Save" icon="fa-check" (onClick)="save()">
+    <p-splitButtonItem icon="fa-close" label="Delete" (onClick)="delete()"></p-splitButtonItem>
+    <p-splitButtonItem icon="fa-refresh" label="Update" (onClick)="update()"></p-splitButtonItem>
+    <p-splitButtonItem icon="fa-link" label="Angular.io" (onClick)="update()"></p-splitButtonItem>
+    <p-splitButtonItem icon="fa-link" label="Theming" (onClick)="update()"></p-splitButtonItem>
+</p-splitButton>
+
+<p-multiSelect [options]="cities" [(ngModel)]="selectedCities"></p-multiSelect>
+
+<!--<p-pieChart [value]="data" width="300" height="300"></p-pieChart>-->
+
+<p-growl [value]="msgs"></p-growl>
+
+<div>
+    <button type="button" pButton (click)="showInfo()" label="Info"></button>
+    <button type="button" pButton (click)="showWarn()" label="Warn"></button>
+    <button type="button" pButton (click)="showError()" label="Error"></button>
+    <button type="button" pButton (click)="showMultiple()" label="Multiple"></button>
+    <button type="button" pButton (click)="clear()" icon="fa-close" style="float: right" label="Clear"></button>
+</div>
+<p-calendar [(ngModel)]="dateValue"></p-calendar>
+
+<p-pieChart [value]="data" width="300" height="300"></p-pieChart>
+<p-growl [value]="msgs"></p-growl>
+
+<h3 class="first">Basic</h3>
+<p-radarChart [value]="data2" width="640" height="320"></p-radarChart>
+
+<h3>Interactive and Customized</h3>
+<p-radarChart [value]="data2" width="640" height="320" [scaleShowLine]="false" [angleLineWidth]="5" [pointDot]="false" [datasetFill]="false" (onPointsSelect)="onSelect($event)"></p-radarChart>
+
