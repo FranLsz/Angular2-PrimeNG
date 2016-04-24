@@ -14,11 +14,24 @@ var primeng_5 = require('primeng/primeng');
 var primeng_6 = require('primeng/primeng');
 var primeng_7 = require('primeng/primeng');
 var primeng_8 = require('primeng/primeng');
+var primeng_9 = require('primeng/primeng');
+var primeng_10 = require('primeng/primeng');
+var primeng_11 = require('primeng/primeng');
+var primeng_12 = require('primeng/primeng');
+var primeng_13 = require('primeng/primeng');
+var primeng_14 = require('primeng/primeng');
 var AppComponent = (function () {
     function AppComponent() {
         this.dateValue = "";
+        this.display = false;
+        this.selectedTypes = ['Apartment', 'Studio'];
         this.msgs = [];
         this.msgs = [];
+        this.selectedType = "Apartment";
+        this.types = [];
+        this.types.push({ label: 'Apartment', value: 'Apartment' });
+        this.types.push({ label: 'House', value: 'House' });
+        this.types.push({ label: 'Studio', value: 'Studio' });
         this.cities = [];
         this.cities.push({ label: 'New York', value: 'New York' });
         this.cities.push({ label: 'Rome', value: 'Rome' });
@@ -70,6 +83,9 @@ var AppComponent = (function () {
             }];
         this.titulo = "Angular 2 Prime NG";
     }
+    AppComponent.prototype.showDialog = function () {
+        this.display = true;
+    };
     AppComponent.prototype.ngOnInit = function () {
     };
     AppComponent.prototype.showInfo = function () {
@@ -105,7 +121,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'app',
             templateUrl: BASE_URL + '/templates/app.template.html',
-            directives: [primeng_1.InputText, primeng_2.SplitButton, primeng_3.SplitButtonItem, primeng_4.PieChart, primeng_5.MultiSelect, primeng_8.RadarChart, primeng_6.Growl, primeng_7.Calendar]
+            directives: [primeng_14.RadioButton, primeng_13.SelectButton, primeng_12.Dialog, primeng_11.Panel, primeng_10.ContextMenu, primeng_9.Button, primeng_1.InputText, primeng_2.SplitButton, primeng_3.SplitButtonItem, primeng_4.PieChart, primeng_5.MultiSelect, primeng_8.RadarChart, primeng_6.Growl, primeng_7.Calendar]
         })
     ], AppComponent);
     return AppComponent;

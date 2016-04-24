@@ -10,11 +10,18 @@ import {Message}                from 'primeng/primeng';
 import {Calendar}               from 'primeng/primeng';
 import {Chart}                  from 'primeng/primeng';
 import {RadarChart}             from 'primeng/primeng';
+import {Button}                 from 'primeng/primeng';
+import {ContextMenu}            from 'primeng/primeng';
+import {Panel}                  from 'primeng/primeng';
+import {Dialog}                 from 'primeng/primeng';
+import {SelectButton}           from 'primeng/primeng';
+import {RadioButton}            from 'primeng/primeng';
+
 
 @Component({
     selector: 'app',
     templateUrl: BASE_URL + '/templates/app.template.html',
-    directives: [InputText, SplitButton, SplitButtonItem, PieChart, MultiSelect, RadarChart, Growl, Calendar]
+    directives: [RadioButton, SelectButton, Dialog, Panel, ContextMenu, Button, InputText, SplitButton, SplitButtonItem, PieChart, MultiSelect, RadarChart, Growl, Calendar]
 })
 
 export class AppComponent {
@@ -24,8 +31,26 @@ export class AppComponent {
     selectedCity: string[];
     dateValue: string = "";
     public data2: any;
+    selectedValue: string;
+    display: boolean = false;
+
+    showDialog() {
+        this.display = true;
+    }
+
+    types: SelectItem[];
+
+    selectedType: string;
+
+    selectedTypes: string[] = ['Apartment', 'Studio'];
+
     constructor() {
         this.msgs = [];
+        this.selectedType = "Apartment";
+        this.types = [];
+        this.types.push({ label: 'Apartment', value: 'Apartment' });
+        this.types.push({ label: 'House', value: 'House' });
+        this.types.push({ label: 'Studio', value: 'Studio' });
 
         this.cities = [];
         this.cities.push({ label: 'New York', value: 'New York' });
